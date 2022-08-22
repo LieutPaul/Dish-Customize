@@ -72,15 +72,6 @@ app.post("/",function(req,res){
         apiURL+="&type="+(apiTypes.join(','));
     }
     console.log(apiURL);
-
-    // https.get(apiURL,function(response){
-    //     if(response.statusCode==200){
-    //         response.on("data",function(data){
-    //             var dataObject=JSON.parse(data);
-    //         });
-    //     }
-    // });
-
     async function getISS(){
         const response=await fetch(apiURL);
         const data=await response.json();
