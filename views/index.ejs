@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Homemade+Apple&family=Lobster&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="Heading">
+        <h1>Dish-Customize</h1>
+        <h2>Find the Correct Dish according to your Needs</h2>
+    </div>
+    
+        
+    
+    
+    <form action="/" method="POST">
+        <div class="c1">
+            <input type="text" placeholder="Dish Name(Can be empty)" name="dish">
+        </div>
+        <div class="cuisines options" style="display: inline-block;">
+            <h3>Cuisines</h3>
+            <label for="cuisine" style="display:inline;" class="for_something">Choose a cuisine :</label>
+            <p name="cuisine">
+                <% for(var i=0;i<cuisines.length;i++){ %>
+                    <label for="<%= cuisines[i] %>"><input name="<%= cuisines[i] %>" type="checkbox"><%=cuisines[i]%></label>
+                <%}%>
+            </p>
+            
+        </div>
+        
+        <div class="diet options" style="display: inline-block;">
+            <h3>Diet</h3>
+            <label for="types-of-diets" style="display:inline;" class="for_something">Choose a diet :</label>
+            <p name="types-of-diets">
+                <% for(var i=0;i<diets.length;i++){ %>
+                    <label for="<%= diets[i] %>"><input name="<%= diets[i] %>" type="checkbox"><%=diets[i]%></label>
+                <%}%>
+            </p>
+            
+        </div>
+
+        <div class="intolerances options" style="display: inline-block;">
+            <h3>Intolerances</h3>
+            <label for="types-of-intolerances" style="display:inline;" class="for_something">Choose your intolerances :</label>
+            <p name="types-of-intolerances">
+                <% for(var i=0;i<intolerances.length;i++){ %>
+                    <label for="<%= intolerances[i] %>"><input name="<%= intolerances[i] %>" type="checkbox"><%=intolerances[i]%></label>
+                <%}%>
+            </p>
+            
+        </div>
+
+        <div class="types options" style="display: inline-block;position:absolute;">
+            <h3>Type of Dish</h3>
+            <label for="types" style="display:inline;" class="for_something">Choose your type :</label>
+            <p name="types">
+                <% for(var i=0;i<types.length;i++){ %>
+                    <label for="<%= types[i] %>"><input name="<%= types[i] %>" type="checkbox"><%=types[i]%></label>
+                <%}%>
+            </p>
+            
+        </div>
+       
+        <button type="submit" style="display:block;">Find Your Dish</button><br><br>
+        
+    
+
+        
+    </form>
+</body>
+</html>

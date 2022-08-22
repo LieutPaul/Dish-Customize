@@ -1,0 +1,100 @@
+body{
+    background-color: rgb(230, 250, 250);
+}
+h1{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 5rem;
+    color:rgb(160, 78, 93)
+}
+h2{
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    text-decoration: underline;
+    font-size:2rem
+}
+h3{
+    font-size:1.8rem;
+    font-family: 'Courgette', cursive;
+    text-decoration: underline;
+}
+.for_something{
+    font-family: 'Homemade Apple', cursive;
+}
+
+.c1{
+    display:inline block;
+    margin:auto;
+    text-align: center;
+
+}
+input[type="text"]{
+    margin-top:4rem;
+    height:3rem;
+    width:30rem;
+    border:2px solid black;
+    font-size: large;
+    text-align: center;
+    position: relative;
+    bottom:2rem;
+
+}
+input[type="text"]::placeholder {
+    text-align: center;
+}
+input[type="text"]:focus {
+    text-align: center;
+    border: 3px solid #555;
+    background-color: rgb(227, 253, 252);
+}
+
+.diet{
+    margin-left: 5rem;
+    position: absolute;
+}
+.intolerances, .types{
+    margin-left:5rem;
+}
+.options{
+    font-size: larger;
+}
+.button-div{
+    text-align: center;
+}
+label {
+    display: block;
+}
+
+button{
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  margin: 0 auto; 
+  display: block;
+}
+
+/*
+    font-family: 'Courgette', cursive;
+
+    font-family: 'Homemade Apple', cursive;
+
+    font-family: 'Lobster', cursive;
+
+    font-family: 'Permanent Marker', cursive;
+*/
